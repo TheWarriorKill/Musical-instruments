@@ -1,0 +1,79 @@
+.footer {
+  &__content {
+    color: #F8F5F1;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 70px;
+    font-weight: 400;
+    background: #493722;
+    text-transform: capitalize;
+    font-family: $fontFamily;
+    line-height: 22.5px;
+  }
+
+  &__info {
+  }
+
+  &__address {
+    width: 250px;
+  }
+
+  &__address-contact {
+  }
+
+  &__contact {
+    & p:last-child{
+      text-transform: none;
+    }
+  }
+
+  &__email {
+    border-bottom: 2px solid $headMainColor;
+    padding-bottom: 15px;
+    & p{
+      text-transform: none;
+    }
+    & input{
+      background: #f8f5f1;
+      color: $mainColor;
+      padding: 5px 25px 5px 10px;
+      border-radius: 15px;
+      transition: background-color 0.5s ;
+      &:hover,&:focus{
+        color: #f8f5f1;
+        background: rgba(248, 245, 241, 0);
+      }
+    }
+    & button{
+      background: none;
+      font-size: 15px;
+      color: $headMainColor;
+      font-weight: 700;
+      margin-left: 5px;
+    }
+  }
+
+  &__socials {
+    & a{
+      display: inline-block;
+      margin-right: 15px;
+    }
+    & span{
+      font-size: 25px;
+    }
+  }
+  & span{
+    font-weight: 600;
+    margin-right: 5px;
+  }
+  & p{
+    margin-bottom: 15px;
+  }
+}
+
+.bold {
+  font-weight: 600;
+  font-size: 18px;
+}
+

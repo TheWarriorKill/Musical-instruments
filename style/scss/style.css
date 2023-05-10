@@ -1,0 +1,562 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700;800&family=Fraunces:wght@600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+:root {
+  --sizeindex: calc(1vw + 1vh) ;
+}
+
+html, body {
+  font-weight: 600;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.card-slider, .card-slider-second {
+  width: 860px;
+  overflow: hidden;
+  margin: 0 15px;
+}
+.card-slider__block, .card-slider-second__block {
+  margin: 0 8px;
+  max-width: 200px;
+  min-height: 300px;
+  background: #FFFFFF;
+  border: 2px solid #F2ECE3;
+  border-radius: 15px;
+}
+.card-slider__block a, .card-slider-second__block a {
+  color: #493722;
+}
+.card-slider__block img, .card-slider-second__block img {
+  width: 170px;
+  height: 165px;
+}
+.card-slider__block-content, .card-slider-second__block-content {
+  padding: 15px;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.card-slider__block-description, .card-slider-second__block-description {
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: 20px;
+  flex: 1 1 auto;
+  margin-top: 5px;
+}
+.card-slider__block-price, .card-slider-second__block-price {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+}
+.card-slider__block-discount, .card-slider-second__block-discount {
+  position: absolute;
+  right: 5px;
+}
+
+.arrow__left {
+  background: #fff;
+  font-size: 20px;
+  padding: 5px;
+  border: 2px solid #F2ECE3;
+  border-radius: 30px;
+}
+
+.arrow__right {
+  background: #fff;
+  font-size: 20px;
+  padding: 5px;
+  border: 2px solid #F2ECE3;
+  border-radius: 30px;
+}
+
+.button-second {
+  cursor: pointer;
+}
+
+.card-slider__block-content .card-slider__block-discount span {
+  color: #f8f5f1;
+  background: #493722;
+  border-radius: 15px;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.card__slider-third {
+  width: 860px;
+  overflow: hidden;
+  margin: 0 15px;
+}
+
+.brands-card-slider__block {
+  max-width: 156px !important;
+  height: 80px;
+  margin: 0 8px;
+}
+
+.card-slider__wrapper-third {
+  will-change: transform;
+}
+
+.item1 {
+  background: url("/../musical-Instruments/img/main/guitar__brands/martins.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80px;
+  border-radius: 14px;
+}
+.item2 {
+  background: url("/../musical-Instruments/img/main/guitar__brands/kamaka.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80px;
+  border-radius: 14px;
+}
+.item3 {
+  background: url("/../musical-Instruments/img/main/guitar__brands/weber.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80px;
+  border-radius: 14px;
+}
+.item4 {
+  background: url("/../musical-Instruments/img/main/guitar__brands/national.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80px;
+  border-radius: 14px;
+}
+.item5 {
+  background: url("/../musical-Instruments/img/main/guitar__brands/kala.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80px;
+  border-radius: 14px;
+}
+.item6 {
+  background: url("/../musical-Instruments/img/main/guitar__brands/fender.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80px;
+  border-radius: 14px;
+}
+.item7 {
+  background: url("/../musical-Instruments/img/main/guitar__brands/yamaha.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80px;
+  border-radius: 14px;
+}
+.item8 {
+  background: url("/../musical-Instruments/img/main/guitar__brands/gibson.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80px;
+  border-radius: 14px;
+}
+
+.swiper-button-disabled span {
+  opacity: 0.3;
+}
+
+.head {
+  height: 540px;
+  color: #F8F5F1;
+  font-size: 1.087rem;
+  font-family: "Commissioner";
+  text-transform: capitalize;
+  position: relative;
+}
+.head__slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.head__slider-wrapper {
+  will-change: transform;
+}
+.head__logo img {
+  max-width: 38px;
+}
+.head__text {
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  max-width: 95px;
+  margin-left: 10px;
+  font-family: "Fraunces", serif;
+}
+.head__top {
+  max-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px 0 rgba(84, 62, 40, 0.2);
+  padding: 25px 30px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.head__top a {
+  color: #F8F5F1;
+}
+.head__links {
+  display: flex;
+  margin-right: 70px;
+}
+.head__search {
+  display: flex;
+  border-bottom: 2px solid #F8F5F1;
+}
+.head__search input {
+  background: none;
+  color: #F8F5F1;
+  font-weight: 300;
+  font-size: 15px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+.head__search span {
+  cursor: pointer;
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+.head__left {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.head__nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.head__nav-list li {
+  min-width: 60px;
+  word-spacing: 2px;
+}
+.head__nav-list li:nth-of-type(-n+3) {
+  display: flex;
+  margin: 0 1.33em;
+}
+.head__nav-list li:last-child a {
+  font-size: calc(var(--sizeindex) * 1.4);
+  margin-left: 10px;
+}
+.head__nav-list a {
+  font-size: calc(var(--sizeindex) * 0.7);
+  font-weight: 500;
+  max-width: 160px;
+  line-height: 20px;
+}
+.head__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+}
+.head__main-text {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: calc(var(--sizeindex) * 2);
+  max-width: 850px;
+  line-height: 60px;
+}
+.head__main-arrow {
+  font-size: 25px;
+  cursor: pointer;
+  padding: 12px 5px;
+  border: 3px solid #F8F5F1;
+  border-radius: 30px;
+  margin-top: 90px;
+  color: #F8F5F1;
+  animation: sliden 2s infinite linear alternate;
+  transition: color 0.3s, border-color 0.3s;
+}
+.head__main-arrow:hover {
+  color: #C2B2A0;
+  border-color: #C2B2A0;
+}
+
+.swiper-slide__img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.head__main .swiper-pagination {
+  position: relative;
+  margin-top: 55px;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #F8F5F1;
+}
+
+.head__main .swiper-pagination-bullet {
+  background: none;
+  opacity: unset;
+}
+
+span.swiper-pagination-bullet {
+  padding: 3px;
+  border: 1px solid #F8F5F1;
+}
+
+.img-1 {
+  background: url("/../musical-Instruments/img/head__background/first.png") no-repeat;
+}
+
+.img-2 {
+  background: url("/../musical-Instruments/img/head__background/last.jpg") no-repeat;
+}
+
+@keyframes sliden {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+.main {
+  flex: 1 1 auto;
+  font-family: "Commissioner";
+  font-size: 1.087rem;
+  color: #493722;
+  text-transform: capitalize;
+  background: #F8F5F1;
+  height: 100%;
+}
+.main__nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  background: #D7CDC1;
+  text-align: center;
+  padding: 0 30px;
+}
+.main__nav li a {
+  color: #493722;
+  display: inline-block;
+  font-size: calc(var(--sizeindex) * 0.7);
+  padding: 22px 0;
+  height: 100%;
+}
+.main__text {
+  text-transform: none;
+  margin: 70px auto;
+  padding: 0 25px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 22px;
+  max-width: 895px;
+  font-size: calc(var(--sizeindex) * 0.7);
+}
+.main__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__block [class^=swiper-button-]::after {
+  content: "";
+}
+.main__block [class^=swiper-button-] {
+  position: relative;
+  margin: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+}
+.main__block span {
+  color: #493722;
+  position: relative;
+}
+.main__block:nth-child(3) {
+  margin-bottom: 200px;
+}
+.main__tittle {
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 36.4px;
+  margin: 140px 0 50px 0;
+}
+.main__footer {
+  background: #F2ECE3;
+  padding-bottom: 155px;
+  margin-top: 100px;
+}
+.main__brands {
+  background: #F2ECE3;
+  text-align: center;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main__brands-tittle {
+  padding: 70px 0 50px 0;
+  color: #493722;
+  font-size: 25px;
+  text-align: center;
+  line-height: 35px;
+}
+.main__brands-text {
+  max-width: 550px;
+  line-height: 22.5px;
+  font-weight: 400;
+  text-transform: none;
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+
+.footer__content {
+  color: #F8F5F1;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 70px;
+  font-weight: 400;
+  background: #493722;
+  text-transform: capitalize;
+  font-family: "Commissioner";
+  line-height: 22.5px;
+}
+.footer__address {
+  width: 250px;
+}
+.footer__contact p:last-child {
+  text-transform: none;
+}
+.footer__email {
+  border-bottom: 2px solid #F8F5F1;
+  padding-bottom: 15px;
+}
+.footer__email p {
+  text-transform: none;
+}
+.footer__email input {
+  background: #f8f5f1;
+  color: #493722;
+  padding: 5px 25px 5px 10px;
+  border-radius: 15px;
+  transition: background-color 0.5s;
+}
+.footer__email input:hover, .footer__email input:focus {
+  color: #f8f5f1;
+  background: rgba(248, 245, 241, 0);
+}
+.footer__email button {
+  background: none;
+  font-size: 15px;
+  color: #F8F5F1;
+  font-weight: 700;
+  margin-left: 5px;
+}
+.footer__socials a {
+  display: inline-block;
+  margin-right: 15px;
+}
+.footer__socials span {
+  font-size: 25px;
+}
+.footer span {
+  font-weight: 600;
+  margin-right: 5px;
+}
+.footer p {
+  margin-bottom: 15px;
+}
+
+.bold {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=style.css.map */

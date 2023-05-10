@@ -1,0 +1,72 @@
+// NULL //
+@import "../null/null";
+/////////
+
+
+:root{
+  --sizeindex: calc(1vw + 1vh)
+}
+html, body {
+  font-weight: 600;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+// SHELL //
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+///////////
+
+// FONTS //
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700;800&family=Fraunces:wght@600;700&display=swap');
+///////////
+
+// BLANK//
+@import "blanks/cards";
+/////////
+// LOCAL-FONTS//
+//@import "fonts/fonts";
+///////////////
+
+// ICON-FONTS //
+//@import "fonts/icons";
+////////////////
+
+// DEFAULT FONT //
+$fontFamily: 'Commissioner';
+$fontSize: 1.087rem;
+//////////////////
+
+// DEFAULT COL //
+$mainColor: #493722;
+/////////////////
+
+
+// HEADER //
+@import "header";
+///////////
+
+// MAIN //
+@import "main";
+//////////
+
+// FOOTER //
+@import "footer";
+///////////
+
+
+//ADAPTIVE//
+@media screen and (min-width: 320px) and (max-width: 767px){
+  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+}
+
+@media screen and (min-width: 1025px) {
+
+}
+///////////
