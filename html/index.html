@@ -7,10 +7,10 @@
     />
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Classical Music</title>
+    <title>Crossroads Music</title>
 </head>
 <body>
 <div class="wrapper">
@@ -20,11 +20,9 @@
             <div class="head__slider-wrapper swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="swiper-slide__img img-1"></div>
-<!--                    <img src="/img/head__background/first.png" alt="">-->
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-slide__img img-2"></div>
-<!--                    <img src="/img/head__background/last.jpg" alt="">-->
                 </div>
             </div>
         </div>
@@ -49,25 +47,29 @@
             </div>
             <nav class="head__nav">
                 <ul class="head__nav-list">
-                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#footer-scroll">Про нас</a></li>
                     <li><a href="#">Особистий кабінет</a></li>
-                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#footer-scroll">Контакти</a></li>
                     <li>
-                        <a href="#">
+                        <a href="cart.html">
                             <span class="_icon-basket"></span>
                         </a>
                     </li>
                 </ul>
+                <div class="head__nav-buttons">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </div>
-
         <div class="head__main">
-            <aside class="head__main-text">
+            <aside class="head__main-text" id="about-scroll">
                 <p>Найкращі інструменти ручної роботи Port Townsend`s</p>
             </aside>
-            <a class="head__main-arrow" id="arrow">
+            <div class="head__main-arrow" id="arrow">
                 <span class="_icon-arrow-down2"></span>
-            </a>
+            </div>
             <div class="swiper-pagination"></div>
 
         </div>
@@ -76,13 +78,27 @@
     <main class="main">
         <div class="main__content">
             <ul class="main__nav">
-                <li><a href="#">Гітари</a></li>
-                <li><a href="#">Комбопідсилювачі</a></li>
-                <li><a href="#">барабани</a></li>
-                <li><a href="#">Клавішні</a></li>
-                <li><a href="#">аксесуари</a></li>
-                <li><a href="#">Дитячі інструменти</a></li>
-                <li><a href="#">Книги</a></li>
+                <li class="bdCategory" id="guitar">
+                    <a href="products.html">Гітари</a>
+                </li>
+                <li class="bdCategory">
+                    <a href="products.html">Комбопідсилювачі</a>
+                </li>
+                <li class="bdCategory" id="drums">
+                    <a href="products.html">барабани</a>
+                </li>
+                <li class="bdCategory" id="piano">
+                    <a href="products.html">Клавішні</a>
+                </li>
+                <li class="bdCategory">
+                    <a href="products.html">аксесуари</a>
+                </li>
+                <li class="bdCategory">
+                    <a href="products.html">Дитячі інструменти</a>
+                </li>
+                <li class="bdCategory">
+                    <a href="products.html">Книги</a>
+                </li>
             </ul>
             <aside class="main__text">
                 <p>Crossroads Music – це музичний магазин північноамериканського виробництва інструментів ручної роботи,
@@ -91,146 +107,155 @@
                     хочете придбати свій перший інструмент.</p>
             </aside>
 
-            <div class="main__tittle" id="scroll-slider">
+            <div class="main__title" id="scroll-slider">
                 <p>Купуйте наші бестселери</p>
             </div>
-            <div class="main__block" >
+            <div class="main__block">
 
                 <div class="swiper-button-prev ">
                     <span class="arrow__left _icon-arrow-left2"></span>
                 </div>
 
-                <div class="card-slider swiper-container" >
+                <div class="card-slider swiper-container">
                     <div class="card-slider__wrapper swiper-wrapper">
                         <div class="card-slider__block swiper-slide">
-                            <a href="#">
-                                <div class="card-slider__block-content">
-                                    <div class="card-slider__block-img">
-                                        <img src="/img/main/guitar.jpg" alt="guitar">
-                                    </div>
-                                    <div class="card-slider__block-description">
-                                        <p>C.F. Акустична гітара Martin OM-28E Modern Deluxe зі звукознімачем</p>
-                                    </div>
-                                    <div class="card-slider__block-price">
-                                        <p>$699.00</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card-slider__block swiper-slide">
-                            <a href="#">
+                            <a class="bdLink" href="product__card.html">
                                 <div class="card-slider__block-content">
                                     <div class="card-slider__block-discount">
-                                        <span>On Sale</span>
                                     </div>
                                     <div class="card-slider__block-img">
-                                        <img src="/img/main/piano.jpg" alt="piano">
+                                        <img class="bdImage" src="" alt="martin">
                                     </div>
                                     <div class="card-slider__block-description">
-                                        <p>Портативна клавіатура Casio CT-S1 чорна</p>
+                                        <p class="bdDescription"></p>
                                     </div>
                                     <div class="card-slider__block-price">
-                                        <p>$189.99</p>
+                                        <p class="bdPrice"></p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="card-slider__block swiper-slide">
-                            <a href="#">
-                                <div class="card-slider__block-content">
-                                    <div class="card-slider__block-img">
-                                        <img src="/img/main/electric-guitar.jpg" alt="guitar">
-                                    </div>
-                                    <div class="card-slider__block-description">
-                                        <p>Електрогітара Cort з однокотушковими звукознімачами та чорним покриттям</p>
-                                    </div>
-                                    <div class="card-slider__block-price">
-                                        <p>$159.99</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card-slider__block swiper-slide">
-                            <a href="#">
+                            <a class="bdLink" href="product__card.html">
                                 <div class="card-slider__block-content">
                                     <div class="card-slider__block-discount">
-                                        <span>On Sale</span>
                                     </div>
                                     <div class="card-slider__block-img">
-                                        <img src="/img/main/mandolin.png" alt="mandolin">
+                                        <img class="bdImage" src="" alt="casio">
                                     </div>
                                     <div class="card-slider__block-description">
-                                        <p>Мандоліна Loar A-Style зі звукознімачем</p>
+                                        <p class="bdDescription"></p>
                                     </div>
                                     <div class="card-slider__block-price">
-                                        <p>$449.99</p>
+                                        <p class="bdPrice"></p>
                                     </div>
+
                                 </div>
                             </a>
                         </div>
                         <div class="card-slider__block swiper-slide">
-                            <a href="#">
+                            <a class="bdLink" href="product__card.html">
                                 <div class="card-slider__block-content">
                                     <div class="card-slider__block-discount">
-                                        <span>On Sale</span>
                                     </div>
                                     <div class="card-slider__block-img">
-                                        <img src="/img/main/banjo.png" alt="banjo">
+                                        <img class="bdImage" src="" alt="cort">
                                     </div>
                                     <div class="card-slider__block-description">
-                                        <p>Золотий тон Little Gem Banjolele – фіолетовий аметист</p>
+                                        <p class="bdDescription"></p>
                                     </div>
                                     <div class="card-slider__block-price">
-                                        <p>$189.99</p>
+                                        <p class="bdPrice"></p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="card-slider__block swiper-slide">
-                            <a href="#">
+                            <a class="bdLink" href="product__card.html">
                                 <div class="card-slider__block-content">
+                                    <div class="card-slider__block-discount">
+                                    </div>
                                     <div class="card-slider__block-img">
-                                        <img src="/img/main/pink-Uke.jpg" alt="ukulele">
+                                        <img class="bdImage" src="" alt="loar">
                                     </div>
                                     <div class="card-slider__block-description">
-                                        <p>kala Waterman Soft Pink Matte Soprano Ukulele</p>
+                                        <p class="bdDescription"></p>
                                     </div>
                                     <div class="card-slider__block-price">
-                                        <p>$54.99</p>
+                                        <p class="bdPrice"></p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="card-slider__block swiper-slide">
-                            <a href="#">
+                            <a class="bdLink" href="product__card.html">
                                 <div class="card-slider__block-content">
+                                    <div class="card-slider__block-discount">
+                                    </div>
                                     <div class="card-slider__block-img">
-                                        <img src="/img/main/brown-Uke.jpg" alt="ukulele">
+                                        <img class="bdImage" src="" alt="little">
                                     </div>
                                     <div class="card-slider__block-description">
-                                        <p>kala Waterman laminate Soprano Ukulele</p>
+                                        <p class="bdDescription"></p>
                                     </div>
                                     <div class="card-slider__block-price">
-                                        <p>$129.99</p>
+                                        <p class="bdPrice"></p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="card-slider__block swiper-slide">
-                            <a href="#">
+                            <a class="bdLink" href="product__card.html">
                                 <div class="card-slider__block-content">
+                                    <div class="card-slider__block-discount">
+                                    </div>
                                     <div class="card-slider__block-img">
-                                        <img src="/img/main/djembe.png" alt="djembe">
+                                        <img class="bdImage" src="" alt="kala">
                                     </div>
                                     <div class="card-slider__block-description">
-                                        <p>Sageman Djembe 11″ X 24″ Line Carved & Light Finish</p>
+                                        <p class="bdDescription"></p>
                                     </div>
                                     <div class="card-slider__block-price">
-                                        <p>$299.99</p>
+                                        <p class="bdPrice"></p>
                                     </div>
                                 </div>
                             </a>
                         </div>
+                        <div class="card-slider__block swiper-slide">
+                            <a class="bdLink" href="product__card.html">
+                                <div class="card-slider__block-content">
+                                    <div class="card-slider__block-discount">
+                                    </div>
+                                    <div class="card-slider__block-img">
+                                        <img class="bdImage" src="" alt="kalas">
+                                    </div>
+                                    <div class="card-slider__block-description">
+                                        <p class="bdDescription"></p>
+                                    </div>
+                                    <div class="card-slider__block-price">
+                                        <p class="bdPrice"></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-slider__block swiper-slide">
+                            <a class="bdLink" href="product__card.html">
+                                <div class="card-slider__block-content">
+                                    <div class="card-slider__block-discount">
+                                    </div>
+                                    <div class="card-slider__block-img">
+                                        <img class="bdImage" src="" alt="sageman">
+                                    </div>
+                                    <div class="card-slider__block-description">
+                                        <p class="bdDescription"></p>
+                                    </div>
+                                    <div class="card-slider__block-price">
+                                        <p class="bdPrice"></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
 
@@ -240,7 +265,7 @@
 
             </div>
 
-            <div class="main__tittle">
+            <div class="main__title">
                 <p>рекомендовано для вас</p>
             </div>
             <div class="main__block">
@@ -251,124 +276,137 @@
                 <div class="card-slider-second swiper-container">
                     <div class="card-slider__wrapper-second swiper-wrapper">
                         <div class="card-slider__block swiper-slide">
-                            <a href="#">
-                                <div class="card-slider__block-content">
-                                    <div class="card-slider__block-img">
-                                        <img src="/img/main/djembe.png" alt="djembe">
-                                    </div>
-                                    <div class="card-slider__block-description">
-                                        <p>Sageman Djembe 11″ X 24″ Line Carved & Light Finish</p>
-                                    </div>
-                                    <div class="card-slider__block-price">
-                                        <p>$299.99</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card-slider__block swiper-slide">
-                            <a href="#">
-                                <div class="card-slider__block-content">
-                                    <div class="card-slider__block-img">
-                                        <img src="/img/main/pink-Uke.jpg" alt="ukulele">
-                                    </div>
-                                    <div class="card-slider__block-description">
-                                        <p>kala Waterman Soft Pink Matte Soprano Ukulele</p>
-                                    </div>
-                                    <div class="card-slider__block-price">
-                                        <p>$54.99</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card-slider__block swiper-slide">
-                            <a href="#">
-                                <div class="card-slider__block-content">
-                                    <div class="card-slider__block-img">
-                                        <img src="/img/main/brown-Uke.jpg" alt="ukulele">
-                                    </div>
-                                    <div class="card-slider__block-description">
-                                        <p>kala Waterman laminate Soprano Ukulele</p>
-                                    </div>
-                                    <div class="card-slider__block-price">
-                                        <p>$129.99</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card-slider__block swiper-slide">
-                            <a href="#">
+                            <a class="bdLink" href="product__card.html">
                                 <div class="card-slider__block-content">
                                     <div class="card-slider__block-discount">
-                                        <span>On Sale</span>
                                     </div>
                                     <div class="card-slider__block-img">
-                                        <img src="/img/main/banjo.png" alt="banjo">
+                                        <img class="bdImage" src="" alt="sageman">
                                     </div>
                                     <div class="card-slider__block-description">
-                                        <p>Золотий тон Little Gem Banjolele – фіолетовий аметист</p>
+                                        <p class="bdDescription"></p>
                                     </div>
                                     <div class="card-slider__block-price">
-                                        <p>$189.99</p>
+                                        <p class="bdPrice"></p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="card-slider__block swiper-slide">
-                            <a href="#">
+                            <a class="bdLink" href="product__card.html">
                                 <div class="card-slider__block-content">
+                                    <div class="card-slider__block-discount">
+                                    </div>
                                     <div class="card-slider__block-img">
-                                        <img src="/img/main/guitar.jpg" alt="guitar">
+                                        <img class="bdImage" src="" alt="kala">
                                     </div>
                                     <div class="card-slider__block-description">
-                                        <p>C.F. Акустична гітара Martin OM-28E Modern Deluxe зі звукознімачем</p>
+                                        <p class="bdDescription"></p>
                                     </div>
                                     <div class="card-slider__block-price">
-                                        <p>$699.00</p>
+                                        <p class="bdPrice"></p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="card-slider__block swiper-slide">
-                            <a href="#">
+                            <a class="bdLink" href="product__card.html">
                                 <div class="card-slider__block-content">
+                                    <div class="card-slider__block-discount">
+                                    </div>
                                     <div class="card-slider__block-img">
-                                        <img src="/img/main/piano.jpg" alt="piano">
+                                        <img class="bdImage" src="" alt="kalas">
                                     </div>
                                     <div class="card-slider__block-description">
-                                        <p>Портативна клавіатура Casio CT-S1 чорна</p>
+                                        <p class="bdDescription"></p>
                                     </div>
                                     <div class="card-slider__block-price">
-                                        <p>$189.99</p>
+                                        <p class="bdPrice"></p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="card-slider__block swiper-slide">
-                            <a href="#">
+                            <a class="bdLink" href="product__card.html">
                                 <div class="card-slider__block-content">
+                                    <div class="card-slider__block-discount">
+                                    </div>
                                     <div class="card-slider__block-img">
-                                        <img src="/img/main/electric-guitar.jpg" alt="guitar">
+                                        <img class="bdImage" src="" alt="little">
                                     </div>
                                     <div class="card-slider__block-description">
-                                        <p>Електрогітара Cort з однокотушковими звукознімачами та чорним покриттям</p>
+                                        <p class="bdDescription"></p>
                                     </div>
                                     <div class="card-slider__block-price">
-                                        <p>$159.99</p>
+                                        <p class="bdPrice"></p>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="card-slider__block swiper-slide">
-                            <a href="#">
+                            <a class="bdLink" href="product__card.html">
                                 <div class="card-slider__block-content">
+                                    <div class="card-slider__block-discount">
+                                    </div>
                                     <div class="card-slider__block-img">
-                                        <img src="/img/main/mandolin.png" alt="mandolin">
+                                        <img class="bdImage" src="" alt="cort">
                                     </div>
                                     <div class="card-slider__block-description">
-                                        <p>Мандоліна Loar A-Style зі звукознімачем</p>
+                                        <p class="bdDescription"></p>
                                     </div>
                                     <div class="card-slider__block-price">
-                                        <p>$449.99</p>
+                                        <p class="bdPrice"></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-slider__block swiper-slide">
+                            <a class="bdLink" href="product__card.html">
+                                <div class="card-slider__block-content">
+                                    <div class="card-slider__block-discount">
+                                    </div>
+                                    <div class="card-slider__block-img">
+                                        <img class="bdImage" src="" alt="casio">
+                                    </div>
+                                    <div class="card-slider__block-description">
+                                        <p class="bdDescription"></p>
+                                    </div>
+                                    <div class="card-slider__block-price">
+                                        <p class="bdPrice"></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-slider__block swiper-slide">
+                            <a class="bdLink" href="product__card.html">
+                                <div class="card-slider__block-content">
+                                    <div class="card-slider__block-discount">
+                                    </div>
+                                    <div class="card-slider__block-img">
+                                        <img class="bdImage" src="" alt="martin">
+                                    </div>
+                                    <div class="card-slider__block-description">
+                                        <p class="bdDescription"></p>
+                                    </div>
+                                    <div class="card-slider__block-price">
+                                        <p class="bdPrice"></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-slider__block swiper-slide">
+                            <a class="bdLink" href="product__card.html">
+                                <div class="card-slider__block-content">
+                                    <div class="card-slider__block-discount">
+                                    </div>
+                                    <div class="card-slider__block-img">
+                                        <img class="bdImage" src="" alt="loar">
+                                    </div>
+                                    <div class="card-slider__block-description">
+                                        <p class="bdDescription"></p>
+                                    </div>
+                                    <div class="card-slider__block-price">
+                                        <p class="bdPrice"></p>
                                     </div>
                                 </div>
                             </a>
@@ -384,7 +422,7 @@
 
 
             <aside class="main__footer">
-                <div class="main__brands-tittle">
+                <div class="main__brands-title">
                     <h2>Наші бренди</h2>
                 </div>
                 <div class="main__brands-text">
@@ -440,7 +478,7 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__content">
+        <div class="footer__content" id="footer-scroll">
             <div class="footer__info">
                 <div class="footer__address">
                     <div class="footer__address-contact">

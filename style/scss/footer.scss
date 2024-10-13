@@ -10,6 +10,7 @@
     text-transform: capitalize;
     font-family: $fontFamily;
     line-height: 22.5px;
+    font-size: calc(var(--sizeindex) * .6);
   }
 
   &__info {
@@ -35,15 +36,10 @@
       text-transform: none;
     }
     & input{
-      background: #f8f5f1;
-      color: $mainColor;
+      background: $mainColor;
+      color: $headMainColor;
       padding: 5px 25px 5px 10px;
       border-radius: 15px;
-      transition: background-color 0.5s ;
-      &:hover,&:focus{
-        color: #f8f5f1;
-        background: rgba(248, 245, 241, 0);
-      }
     }
     & button{
       background: none;
@@ -60,8 +56,9 @@
       margin-right: 15px;
     }
     & span{
-      font-size: 25px;
+      font-size: calc(var(--sizeindex) * 1.1);
     }
+
   }
   & span{
     font-weight: 600;
@@ -74,6 +71,7 @@
 
 .bold {
   font-weight: 600;
-  font-size: 18px;
+  //font-size: 18px;
+  font-size: calc(var(--sizeindex) * .8);
 }
 

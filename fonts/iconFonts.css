@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icons';
-  src:  url('fonts/icons.eot?kedcds');
-  src:  url('fonts/icons.eot?kedcds#iefix') format('embedded-opentype'),
-    url('fonts/icons.ttf?kedcds') format('truetype'),
-    url('fonts/icons.woff?kedcds') format('woff'),
-    url('fonts/icons.svg?kedcds#icons') format('svg');
+  src:  url('/../musical-Instruments/fonts/fonts/icons.eot?dyykhw');
+  src:  url('/../musical-Instruments/fonts/fonts/icons.eot?dyykhw#iefix') format('embedded-opentype'),
+    url('/../musical-Instruments/fonts/fonts/icons.ttf?dyykhw') format('truetype'),
+    url('/../musical-Instruments/fonts/fonts/icons.woff?dyykhw') format('woff'),
+    url('/../musical-Instruments/fonts/fonts/icons.svg?dyykhw#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,13 +25,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+._icon-round-plus:before {
+  content: "\e907";
+  color: #493722;
+}
+._icon-round-minus:before {
+  content: "\e908";
+  color: #493722;
+}
 ._icon-add:before {
   content: "\e900";
-  color: #f8f5f1;
+  color: #493722;
 }
 ._icon-uncover:before {
   content: "\e902";
-  color: #f8f5f1;
+  color: #493722;
 }
 ._icon-basket:before {
   content: "\e901";

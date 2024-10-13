@@ -2,10 +2,11 @@
   width: 860px;
   overflow: hidden;
   margin: 0 15px;
+
   &__block {
     margin: 0 8px;
     max-width: 200px;
-    min-height: 300px;
+    min-height: 325px;
     background: #FFFFFF;
     border: 2px solid #F2ECE3;
     border-radius: 15px;
@@ -22,10 +23,10 @@
     &-content {
       padding: 15px;
       width: 200px;
-      height: 300px;
+      height: 325px;
       display: flex;
       flex-direction: column;
-      min-height: 100%;
+      //min-height: 100%;
     }
 
     &-img {
@@ -37,21 +38,27 @@
       font-size: 16px;
       line-height: 20px;
       flex: 1 1 auto;
-      margin-top: 5px;
     }
 
     &-price {
       font-weight: 800;
       font-size: 16px;
-      line-height: 20px;
+      display: flex;
+
     }
 
     &-discount {
       position: absolute;
       right: 5px;
-
     }
   }
+}
+
+.card-slider__block-content .card-slider__block-price span {
+  margin-left: 5px;
+  color: #C2B2A0;
+  font-weight: 600;
+  text-decoration: line-through ;
 }
 
 .arrow__left {
@@ -168,6 +175,6 @@
   }
 }
 
-.swiper-button-disabled span{
+.swiper-button-disabled span {
   opacity: 0.3;
 }

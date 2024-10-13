@@ -1,10 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <link rel="stylesheet" href="/style/scss/style.css">
+    <link rel="stylesheet" href="/fonts/iconFonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <title>Cart</title>
 </head>
 <body>
-$END$
+
+<div class="wrapper">
+    <header class="head head__guitar">
+        <div class="head__top head__guitar-top">
+            <div class="head__left">
+                <a href="index.html" class="head__links">
+                    <div class="head__logo">
+                        <img src="/img/img__logo/crossroads-logo.png" alt="">
+                    </div>
+                    <div class="head__text">
+                        <h1>Crossroads Music</h1>
+                    </div>
+                </a>
+                <div class="head__search">
+                    <label>
+                        <input type="text" class="search" placeholder="Пошук усіх продуктів">
+                    </label>
+                    <span class="head__search-icon _icon-search"></span>
+
+                </div>
+            </div>
+            <nav class="head__nav">
+                <ul class="head__nav-list">
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="account.html">Особистий кабінет</a></li>
+                    <li><a href="#footer-scroll">Контакти</a></li>
+                    <li>
+                        <a href="#">
+                            <span class="_icon-basket"></span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="head__nav-buttons">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__content">
+            <ul class="main__nav">
+                <li><a href="products.html">Гітари</a></li>
+                <li><a href="products.html">Комбопідсилювачі</a></li>
+                <li><a href="products.html">барабани</a></li>
+                <li><a href="products.html">Клавішні</a></li>
+                <li><a href="products.html">аксесуари</a></li>
+                <li><a href="products.html">Дитячі інструменти</a></li>
+                <li><a href="products.html">Книги</a></li>
+            </ul>
+            <div class="main__emptyCart">
+                <div class="main__emptyCart-title">
+                    <p>Ваш кошик порожній</p>
+                </div>
+                <div class="main__emptyCart-paragraph">
+                    <p>Зараз у вашому кошику немає товарів.
+                        Давайте знайдемо щось особливе для вас</p>
+                </div>
+                <div class="main__emptyCart-button">
+                    <a href="products.html?category=guitar">Назад до покупок</a>
+                </div>
+            </div>
+            <div class="main__cart">
+                <div class="main__cart-title">
+<!--                    <p>Ваш кошик</p>-->
+                </div>
+                <div class="main__cart-product"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__content" id="footer-scroll">
+            <div class="footer__info">
+                <div class="footer__address">
+                    <div class="footer__address-contact">
+                        <p class="bold">адреса</p>
+                        <p>
+                            2100 Лаврентійська вул
+                            Порт-Таунсенд, штат Вашингтон. 98368
+                            Сполучені Штати
+                        </p>
+                        <p>
+                            Понеділок - п'ятниця, 12:00 - 17:00
+                            Субота та неділя, вихідний
+                        </p>
+                    </div>
+
+                </div>
+                <div class="footer__contact">
+                    <div class="footer__address-contact">
+                        <p class="bold">контакти</p>
+                        <p>
+                            <span>Телефон:</span> 360 385 1471 <br>
+                            <span>Електронна адреса:</span> info@crossroads-music.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__email">
+                <p class="bold">Отримуйте нашу розсилку</p>
+                <label>
+                    <span>email:</span>
+                    <input type="email" placeholder="yourname@email.com" required>
+                </label>
+                <button type="button">Subscribe</button>
+
+            </div>
+            <div class="footer__socials">
+                <p class="bold">Будь на зв'язку</p>
+                <a href="#"><span class="_icon-facebook"></span></a>
+                <a href="#"><span class="_icon-instagram"></span></a>
+                <a href="#"><span class="_icon-youtube"></span></a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="/script/index.js"></script>
 </body>
 </html>

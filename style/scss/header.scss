@@ -1,5 +1,4 @@
-$headMainColor: #F8F5F1;
-
+$headMainColor: #f8f5f1;
 .head {
   height: 540px;
   color: $headMainColor;
@@ -70,7 +69,7 @@ $headMainColor: #F8F5F1;
 
     & span {
       cursor: pointer;
-      font-size: 25px;
+      font-size: 20px;
       padding-bottom: 5px;
     }
   }
@@ -88,7 +87,7 @@ $headMainColor: #F8F5F1;
       justify-content: center;
       text-align: center;
       & li{
-        min-width: 60px;
+        min-width: 51px;
         word-spacing: 2px;
       }
       & li:nth-of-type(-n+3) {
@@ -98,7 +97,7 @@ $headMainColor: #F8F5F1;
 
       & li:last-child a{
         font-size: calc(var(--sizeindex) * 1.4);
-        margin-left: 10px;
+        margin-left: 20px;
       }
 
       & a {
@@ -106,6 +105,33 @@ $headMainColor: #F8F5F1;
         font-weight: 500;
         max-width: 160px;
         line-height: 20px;
+      }
+    }
+    &-buttons{
+      display: none;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      z-index:2;
+      overflow: hidden;
+      & span{
+        position: absolute;
+        margin: 2px 0;
+        display: inline-block;
+        background: #fff;
+        width: 20px;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        height: 2px;
+        border-radius: 2px;
+        &:nth-of-type(2){
+          top: calc(50% - 5px);
+        }
+        &:nth-of-type(3){
+          top: calc(50% + 5px);
+          max-width: 40%;
+          margin-left: 4px;
+        }
       }
     }
   }
@@ -140,6 +166,13 @@ $headMainColor: #F8F5F1;
         color: #C2B2A0;
         border-color: #C2B2A0;
       }
+    }
+  }
+
+  &__guitar{
+    height: auto;
+    &-top{
+      background: $mainColor;
     }
   }
 }
