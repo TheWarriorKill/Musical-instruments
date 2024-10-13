@@ -1,0 +1,19 @@
+{
+  "name": "musical-instruments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script/index.js",
+  "scripts": {
+    "test": "nodemon script/server.js"
+  },
+  "author": "Volodimir",
+  "license": "ISC",
+  "dependencies": {
+    "experss": "^0.0.1-security",
+    "mongodb": "^5.6.0",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
